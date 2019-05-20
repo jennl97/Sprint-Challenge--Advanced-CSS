@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Fully responsive websites use responsive units, such as percentages, ems or rems while adaptive websites do not. Responsive websites also use features of fixed, adaptive and fluid websites while adaptive websites use features of fixed layouts. Lastly, responsive websites require more time and effort to build, while adaptive layouts are meant for quick turnaround. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that a site is built out for mobile screens first, and then you build for the tablet and desktop views to define the break points. Mobile first tends to use have a majority of the styles in a media query, and these media queries use min-width. Desktop first builds a site for desktop screens first, then tablet and then mobile views. Most styles are not in media queries, and the media queries that are used use a max-width to define the break points.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The 'font-size: 62.5%' in the html tag sets the font size to a base of 10px. This makes the math easy as you are trying to define font-sizes later in your code, as well as helps with accessability for users who use custom font size settings on their monitors.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would tell them that preprocessing allows you to visualize your code a lot easier because you can do things like nest elements. So instead of writing out .class ul li a, you can just nest it. It also allows you to use things like variables and mixins. These are helpful because it allows you to write the code once, and reuse it. It definately has usability advantages. I would say that the disavantage is having to run the compiler through the command line, just because you have to keep an eye on that, but even that has an advantage, since it tells you where code is broken.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is using variables and mixins. I love that I can reuse code. It really does make setting styles a breeze. The concept that gave me trouble was nesting. I had a hard time wrapping my head around nesting correctly. I was getting TOO deep and TOO specific. But I think I figured it out. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -1,1 +1,38 @@
 // Mixins Here
+//mixins for desktop version
+.block(){
+    display: block;
+    margin: 0 auto;
+}
+
+.nava(){
+    font-size: 1.75rem;
+    color: @nav-font;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+//parametric mixin for button
+.button(@btn-bg: @btn-bg-color, @btn-color: white){
+    background-color:@btn-bg;
+    width: 30%;
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 8px;
+    color: @btn-color;
+    border-radius: 5px;
+    &:hover{
+        background-color: @shuttle-gray;
+        color: blue;
+    }
+}
+
+//Stretch Goal
+.fixed(){
+    display: block;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 10%;
+}
